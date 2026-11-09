@@ -1,0 +1,131 @@
+/*
+Стили приложения «Стоматология Улыбка»
+Задание 4: Разработка информационной системы
+*/
+
+/* Главное окно */
+QMainWindow {
+    background-color: #FAFAFA;
+}
+
+/* Заголовки */
+QLabel#lbl_title, QLabel#lbl_admin_title, QLabel#lbl_user_title {
+    color: #1565C0;
+    background-color: transparent;
+}
+
+/* Поля ввода */
+QLineEdit {
+    padding: 8px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+QLineEdit:focus {
+    border: 2px solid #1565C0;
+}
+
+/* Кнопки */
+QPushButton {
+    padding: 8px 20px;
+    background-color: #1565C0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #1976D2;
+}
+
+QPushButton:pressed {
+    background-color: #0D47A1;
+}
+
+QPushButton:disabled {
+    background-color: #BDBDBD;
+}
+
+/* Таблицы */
+QTableWidget {
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    gridline-color: #E0E0E0;
+}
+
+QTableWidget::item {
+    padding: 5px;
+}
+
+QTableWidget::item:selected {
+    background-color: #E3F2FD;
+    color: #1565C0;
+}
+
+QHeaderView::section {
+    background-color: #1565C0;
+    color: white;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+}
+
+/* Табы */
+QTabWidget::pane {
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+
+QTabBar::tab {
+    padding: 8px 16px;
+    background-color: #F5F5F5;
+    border: 1px solid #E0E0E0;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #1565C0;
+    font-weight: bold;
+}
+
+/* Комбобоксы */
+QComboBox {
+    padding: 6px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+/* Скроллбары */
+QScrollBar:vertical {
+    border: none;
+    background-color: #F5F5F5;
+    width: 10px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #BDBDBD;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #9E9E9E;
+}
+
+/* Формы */
+QFormLayout {
+    spacing: 10px;
+}
+
+/* Лейблы */
+QLabel {
+    color: #212121;
+}
